@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Priyanka Divekar</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="https://drive.google.com/drive/folders/1fu8keeiOMbdEl5WTEGgoJ_VqOcaZzDcM?usp=drive_link" class="nav-link">Certifications</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-import"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                  
+                    <div class="featured-name">
+                        <p>Hi 🙋‍♀️I'm Priyanka</p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Passionate Software Developer with a strong foundation in HTML, CSS, Python, and Cloud Computing. With 3+ internships, I aim to contribute to collaborative teams and create exceptional web experiences.</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><a href="https://www.instagram.com/pri.03__/"><i class="uil uil-instagram"></i></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/priyanka-divekar-0515bb178/"><i class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"><a href="https://github.com/priyankdive3"><i class="uil uil-github-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/photu.jpeg" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>Introduction</h3>
+                            <p>I am from Pune and graduated from D.Y. Patil College of Engineering in 2023.
+                                 With internships at multiple companies, I've gained experience in Python Django,
+                                  Golang, Swagger, MySql, HTML, CSS, and JavaScript. Currently, I'm interning as a Cloud Computing
+                                   intern at Encryptix.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Companies</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Encryptix</span>
+                                <span>Veritech Software Services</span>
+                                <span>Praman Proserv Technologies Pvt Ltd</span>
+                                <span>Widesoft Technologies Pvt Ltd</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Skills</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Go</span>
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>Mysql</span>
+                                <span>Swagger</span>
+                                <span>Cloud Computing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h2>Get in touch</h2>
+                </div>
+                <center>
+                    <div class="col">
+                        <div class="contact-card">
+                            <ul>
+                                <li><i class="uil uil-envelope"></i> Email: priyanka.divekar1100@gmail.com</li>
+                                <li><i class="uil uil-linkedin-alt"></i> LinkedIn: priyanka-divekar-0515bb178</li>
+                                <li><i class="uil uil-phone"></i> Mob: +91 9975074132</li>
+                                <li><i class="uil uil-github-alt"></i> GitHub: priyankdive3</li>
+                                <li><i class="uil uil-instagram"></i> Instagram: pri.03__</li>
+                            </ul>
+                        </div>
+                    </div>
+                </center>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

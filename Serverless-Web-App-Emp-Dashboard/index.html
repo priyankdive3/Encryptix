@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#getAllEmployees">Employees</a></li>
+            <li><a href="#getAlldept">Departments</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Employee Dashboard</h1>
+            <div class="button-group">
+                <button class="btn" id="addEmployee">Add Employee</button>
+                <button class="btn" id="getAllEmployees">Get All Employees</button>
+            </div>
+        </div>
+        
+        <!-- Form for adding an employee -->
+        <div class="add-employee-form">
+            <h2>Add Employee</h2>
+            <form action="/add-employee" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" ><br><br>
+
+                <label for="employeeid">Employee ID:</label><br>
+                <input type="text" id="employeeid" name="employeeid" ><br>
+
+                <label for="designation">Designation:</label><br>
+                <input type="text" id="designation" name="designation" ><br>
+
+                <label for="department">Department:</label><br>
+                <input type="text" id="department" name="department"><br>
+
+                <label for="joiningdate">Joining Date:</label><br>
+                <input type="text" id="joiningdate" name="joiningdate"><br>
+
+                <label for="code">Code:</label><br>
+                <input type="text" id="code" name="code" value="E123"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="card">
+            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Jane Doe</b></h4> 
+              <p>Interior Designer</p> 
+            </div>
+          </div>
+          
+        <div class="employee-list">
+            <h2>Employees</h2>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Department</th>
+                        <th>Code</th>
+                        <th>Joining Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
